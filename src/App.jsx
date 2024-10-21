@@ -14,7 +14,7 @@ function App() {
     axios
       .get(`https://studies.cs.helsinki.fi/restcountries/api/all`)
       .then((resp) => {
-        console.log(resp.data);
+        // console.log(resp.data);
         setCountries(resp.data);
       });
   }, []);
@@ -50,7 +50,7 @@ function App() {
   let filter = countries.filter((country) => {
     return country.name.common.toLowerCase().includes(value.toLowerCase());
   });
-  console.log("filter", filter);
+  // console.log("filter", filter);
 
   // function
   let renderCountry = () => {
@@ -102,7 +102,7 @@ function App() {
     let response = await axios.get(
       `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely&appid=${api_key}`
     );
-    console.log(response.data);
+    // console.log(response.data);
     return response.data;
   }
 
