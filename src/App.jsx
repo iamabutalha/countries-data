@@ -19,9 +19,9 @@ function App() {
       });
   }, []);
 
-  useEffect(() => {
-    console.log("countries", countries);
-  }, [countries]);
+  // useEffect(() => {
+  //   console.log("countries", countries);
+  // }, [countries]);
 
   useEffect(() => {
     if (filter.length === 1) {
